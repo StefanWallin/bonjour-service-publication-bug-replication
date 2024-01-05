@@ -1,6 +1,6 @@
 const mdns = require("mdns");
 
-const init = async () => {
+const initMdnsServer = async () => {
   console.log("Publishing bonjour service");
   const ad = mdns.createAdvertisement(mdns.tcp("testapp"), 3000);
   ad.start();
@@ -14,4 +14,4 @@ const init = async () => {
   }
 };
 
-init();
+initMdnsServer();

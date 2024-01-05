@@ -1,6 +1,6 @@
 import Bonjour from "bonjour-service";
 
-const init = async () => {
+const initServer = async () => {
   const instance = new Bonjour();
   console.log("Publishing bonjour service");
   const a = instance.publish({
@@ -19,4 +19,4 @@ const init = async () => {
   }
 };
 
-init();
+initServer();
